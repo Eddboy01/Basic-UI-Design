@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+
+header .header-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(48.2% at 50% 50%);
+  background-color: #9fdfcd;
+}
+header a.btn-open {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+  color: #9fdfcd;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+header nav {
+  position: fixed;
+  left: -200px;
+  z-index: 4;
+  height: 100%;
+  width: 200px;
+  background-color: #333;
+}
+header nav.active {
+  left: 0;
+}
+header nav a {
+  text-decoration: none;
+  color: #9fdfcd;
+  font-size: 2rem;
+  position: absolute;
+  right: 20px;
+}
+header nav ul li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  padding: 15px 10px 10px 10px;
+  color: #9fdfcd;
+}
+#header .header-container {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0 auto;
+}
+header .header-container a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.8rem;
+  border-radius: 5px;
+  width: 40%;
+  margin: 15px auto;
+}
+.header-container a:hover {
+  background-color: #fff;
+  color: #9fdfcd;
+}
+footer {
+  text-align: center;
+  background-color: #9fdfcd;
+  padding: 1rem;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
